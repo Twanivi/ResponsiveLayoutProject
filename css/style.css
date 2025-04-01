@@ -44,16 +44,21 @@ body header .container .logo .logotip {
   letter-spacing: 2px;
   line-height: 42px;
 }
-body header .container .logo .mobile-menu-button img {
-  width: 27px;
+body header .container .logo .mobile-menu-button {
+  background-image: url(../images/menu.svg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 27px;
+  width: 30px;
   display: none;
 }
 @media (max-width: 1146px) {
-  body header .container .logo .mobile-menu-button img {
+  body header .container .logo .mobile-menu-button {
     display: block;
     position: absolute;
     top: 45px;
-    right: 0px;
+    right: 20px;
   }
 }
 @media (max-width: 1146px) {
@@ -73,6 +78,33 @@ body header .container .navigation nav .nav-list li a {
   font-weight: 800;
   line-height: 30px;
   letter-spacing: 2px;
+}
+body header .container .navigation nav .nav-list.open {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body header .container .navigation nav .nav-list.open li {
+  width: 100%;
+}
+body header .container .navigation nav .nav-list.open li a {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  color: white;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+body header .container .navigation nav .nav-list.open li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 body header .container .phone {
   background-image: url(../images/Phone.svg);
