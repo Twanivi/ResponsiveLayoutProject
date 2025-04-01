@@ -8,6 +8,12 @@ const initMobileMenu = () => {
     burger.addEventListener("click", () => {
         navList.classList.toggle("open");
     });
+
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 1146) {
+            navList.classList.remove("open");
+        }
+    });
 }
 
 export { initMobileMenu };

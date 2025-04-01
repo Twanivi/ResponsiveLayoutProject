@@ -78,7 +78,7 @@ body header .container .navigation nav .nav-list.open {
   position: absolute;
   top: 80px;
   right: 20px;
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(72, 72, 72, 0.95);
   padding: 20px;
   border-radius: 10px;
   z-index: 1000;
