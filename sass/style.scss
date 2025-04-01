@@ -63,30 +63,21 @@ body {
 
       .navigation {
         nav {
-          @media (max-width: 1146px) {
-            display: none;
-          }
+          display: flex;
 
           .nav-list {
             display: flex;
             gap: 30px;
             list-style: none;
-
-            li {
-              a {
-                text-decoration: none;
-                color: #080800;
-                font-size: 14px;
-                font-weight: 800;
-                line-height: 30px;
-                letter-spacing: 2px;
-              }
+  
+            @media (max-width: 1146px) {
+              display: none;
             }
           }
 
           .nav-list.open {
             position: absolute;
-            top: 30px;
+            top: 80px;
             right: 20px;
             background: rgba(0, 0, 0, 0.95);
             padding: 20px;
@@ -96,10 +87,10 @@ body {
             display: flex;
             flex-direction: column;
             gap: 10px;
-
+      
             li {
               width: 100%;
-
+      
               a {
                 display: block;
                 width: 100%;
@@ -108,10 +99,21 @@ body {
                 transition: background-color 0.3s ease;
                 border-radius: 5px;
               }
-
+      
               a:hover {
                 background-color: rgba(255, 255, 255, 0.1);
               }
+            }
+          }
+          
+          li {
+            a {
+              text-decoration: none;
+              color: #080800;
+              font-size: 14px;
+              font-weight: 800;
+              line-height: 30px;
+              letter-spacing: 2px;
             }
           }
         }

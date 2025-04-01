@@ -61,27 +61,22 @@ body header .container .logo .mobile-menu-button {
     right: 20px;
   }
 }
-@media (max-width: 1146px) {
-  body header .container .navigation nav {
-    display: none;
-  }
+body header .container .navigation nav {
+  display: flex;
 }
 body header .container .navigation nav .nav-list {
   display: flex;
   gap: 30px;
   list-style: none;
 }
-body header .container .navigation nav .nav-list li a {
-  text-decoration: none;
-  color: #080800;
-  font-size: 14px;
-  font-weight: 800;
-  line-height: 30px;
-  letter-spacing: 2px;
+@media (max-width: 1146px) {
+  body header .container .navigation nav .nav-list {
+    display: none;
+  }
 }
 body header .container .navigation nav .nav-list.open {
   position: absolute;
-  top: 30px;
+  top: 80px;
   right: 20px;
   background: rgba(0, 0, 0, 0.95);
   padding: 20px;
@@ -105,6 +100,14 @@ body header .container .navigation nav .nav-list.open li a {
 }
 body header .container .navigation nav .nav-list.open li a:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+body header .container .navigation nav li a {
+  text-decoration: none;
+  color: #080800;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 30px;
+  letter-spacing: 2px;
 }
 body header .container .phone {
   background-image: url(../images/Phone.svg);
